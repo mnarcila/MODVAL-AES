@@ -1,1 +1,43 @@
 Taller 2 AES -
+1.	Introducción
+
+El Banco ABC está realizando varios proyectos de actualización tecnológica los cuales le permiten ofrecer sus productos financieros de manera más ágil y de ésta forma responder a nuevas necesidades del mercado.
+El Banco acaba de firmar una alianza estratégica con diferentes proveedores de servicios públicos (Agua, Gas, Luz, Telefonía) o también llamados convenios, para permitir a los clientes del banco a través de los diferentes canales de servicio (Cajeros Automáticos, Cajero de Oficina, Teléfono, Portal Web, Aplicación Móvil) permitir el pago de los mismos.
+
+1.1	Objetivo
+
+Implementar una solución utilizando una aproximación orientada a servicios, la cual permita al Banco cumplir con las necesidades de negocio, basándose en los principios de diseño de servicios, patrones y estrategias arquitecturales.
+
+
+1.2	Definiciones, Acrónimos y Abreviaturas
+
+Servidor: Un servidor de base de datos es un programa que provee servicios de base de datos a otros programas u otras computadoras, como es definido por el modelo cliente-servidor. También puede hacer referencia a aquellas computadoras (servidores) dedicadas a ejecutar esos programas, prestando el servicio. 
+
+REST: Deriva de "Representational State Transfer", que traducido vendría a ser “transferencia de representación de estado”, lo que tampoco aclara mucho, pero contiene la clave de lo que significa. Porque la clave de REST es que un servicio REST no tiene estado (es stateless), lo que quiere decir que, entre dos llamadas cualesquiera, el servicio pierde todos sus datos.
+
+SOAP: (originalmente las siglas de Simple Object Access Protocol) es un protocolo estándar que define cómo dos objetos en diferentes procesos pueden comunicarse por medio de intercambio de datos XML. Este protocolo deriva de un protocolo creado por Dave Winer en 1998, llamado XML-RPC. SOAP fue creado por Microsoft, IBM y otros. Está actualmente bajo el auspicio de la W3C. Es uno de los protocolos utilizados en los servicios Web. 
+
+Eclipse Fundación: Es una corporación independiente sin fines de lucro que actúa como administrador de la comunidad de desarrollo de software de código abierto Eclipse. Es una organización apoyada por más de 275 miembros. La Fundación se centra en servicios clave como: gestión de propiedad intelectual (IP), desarrollo de ecosistemas, proceso de desarrollo e infraestructura de TI. Sus miembros incluyen líderes de la industria que han adoptado el código abierto como un habilitador clave para la estrategia empresarial. 
+
+Docker: Es un proyecto de código abierto que automatiza el despliegue de aplicaciones dentro de contenedores de software, proporcionando una capa adicional de abstracción y automatización de virtualización de aplicaciones en múltiples sistemas operativos. Docker utiliza características de aislamiento de recursos del kernel Linux, tales como cgroups y espacios de nombres (namespaces) para permitir que "contenedores" independientes se ejecuten dentro de una sola instancia de Linux, evitando la sobrecarga de iniciar y mantener máquinas virtuales. El soporte del kernel Linux para los espacios de nombres aísla la vista que tiene una aplicación de su entorno operativo, incluyendo árboles de proceso, red, ID de usuario y sistemas de archivos montados, mientras que los cgroups del kernel proporcionan aislamiento de recursos, incluyendo la CPU, la memoria, el bloque de E/S y de la red. 
+
+Eureka: Eureka es un servicio REST, utilizándose principalmente en la nube de AWS, a la cuál está estrechamente ligado. Eureka se comporta como servidor, cuyo objetivo es registrar y localizar microservicios existentes, informar de su localización, su estado y datos relevantes de cada uno de ellos. Además, nos facilita el balanceo de carga y tolerancia a fallos.
+Por último, añadir que gracias a Spring Cloud Netflix, nos proporciona una fácil integración con el proyecto Netflix OSS (Open Source Software) para aplicaciones Spring Boot.
+
+HTTP: El Protocolo de Transferencia de HiperTexto (Hypertext Transfer Protocol) es un sencillo protocolo cliente-servidor que articula los intercambios de información entre los clientes Web y los servidores HTTP. La especificación completa del protocolo HTTP 1/0 está recogida en el RFC 1945. Fue propuesto por Tim Berners-Lee, atendiendo a las necesidades de un sistema global de distribución de información como el World Wide Web
+
+Maven: Maven es una herramienta de automatización de compilación utilizada principalmente para proyectos Java. Aborda dos aspectos del software de construcción: primero, describe cómo se construye el software, y segundo, describe sus dependencias. A diferencia de las herramientas anteriores, como Apache Ant , utiliza convenciones para el procedimiento de compilación, y solo se deben escribir las excepciones. Un archivo XML describe el proyecto de software que se está construyendo, sus dependencias de otros módulos y componentes externos, el orden de compilación, los directorios y los complementos necesarios. Viene con objetivos predefinidos para realizar ciertas tareas bien definidas, como la compilación de código y su empaquetado.
+
+1.3	Referencias
+Servidor:http://www.alegsa.com.ar/Dic/servidor_de_base_de_datos.php
+Rest: https://desarrolloweb.com/articulos/que-es-rest-caracteristicas-sistemas.html
+Soap: https://es.wikipedia.org/wiki/Simple_Object_Access_Protocol
+Eclipse: https://www.eclipse.org/org/foundation/
+Docker: https://www.docker.com/
+Eureka: https://blog.bi-geek.com/arquitecturas-spring-cloud-netflix-eureka/
+Http: http://neo.lcc.uma.es/evirtual/cdd/tutorial/aplicacion/http.html
+Maven: https://en.wikipedia.org/wiki/Apache_Maven
+1.4	Alcance
+
+La solución estará limitada solo a la demostración entregable donde se puedan consumir los servicios expuestos por los proveedores para los convenios inscritos de agua, gas y compensación, a través de herramientas tecnológicas como Rest, Soap, Eureka, Api Gateway, Kong, Docker entre otros.
+
